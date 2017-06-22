@@ -1,2 +1,2 @@
 # mysql_info
-mysql的一些小东西
+生成mysqli数据字典
