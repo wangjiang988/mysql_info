@@ -11,7 +11,7 @@ $database['DB_PWD'] = 'root';
 $mysqli_conn = @mysqli_connect("{$database['DB_HOST']}", "{$database['DB_USER']}", "{$database['DB_PWD']}") or die("mysqli connect is error.");
 mysqli_select_db($mysqli_conn,$database['DB_NAME']);
 $result = mysqli_query($mysqli_conn, 'show tables');
-mysqli_query($mysqli_conn, 'SET NAME GBK'); 
+mysqli_query($mysqli_conn, 'SET NAMES UTF8'); 
 // 取得所有表名
 while ($row = mysqli_fetch_array($result))
 {
